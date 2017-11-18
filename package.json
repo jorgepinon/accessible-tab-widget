@@ -1,0 +1,19 @@
+{
+  "name": "accessible-tab-widget",
+  "version": "1.0.0",
+  "description": "Accessible Tab widget",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jorgepinon/accessible-tab-widget.git"
+  },
+  "author": "",
+  "license": "GNU",
+  "bugs": {
+    "url": "https://github.com/jorgepinon/accessible-tab-widget/issues"
+  },
+  "homepage": "https://github.com/jorgepinon/accessible-tab-widget#readme"
+}

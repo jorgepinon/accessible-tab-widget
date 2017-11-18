@@ -1,0 +1,112 @@
+/* basic demo styling */
+body {
+  margin: 2em;
+  color: #444;
+  line-height: 1.5;
+}
+
+h1, h2 {
+  font-weight: 100;
+}
+dl {
+  font-family: sans-serif;
+}
+
+
+/* Tabs module */
+#tabs h2 {
+    margin: 1em 0 0;
+}
+
+#tabs h2:focus {
+    outline: 0;
+    /* If you're removing the outline, you must add something as good or better! */
+    text-decoration: underline;
+}
+
+.tabsList {
+    float: left;
+    list-style: none;
+    margin: 0;
+}
+
+.tabsList li {
+    position: relative; /*for z-index*/
+    float: left;
+    margin: 0 0.5em 0 0;
+    z-index: 1;
+}
+
+.tabsList li a {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    text-decoration: none;
+    padding: 0.5em;
+    background-color: rgba(0, 0, 0, 0.05);
+  color: #333;
+    cursor: pointer;
+  -webkit-transition: background-color 300ms ease-in 100ms;
+  transition: background-color 300ms ease-in 100ms;
+}
+
+.tabsList li a:link { 
+}
+
+.tabsList li a:hover,
+.tabsList li a:focus,
+.tabsList li a:active {
+    background-color: rgba(0, 0, 0, 0.1); 
+}
+
+.tabsList li a:active { 
+   -webkit-box-shadow: inset 0 5px 4px -5px tomato;
+   box-shadow:         inset 0 5px 1px -3px tomato;
+  outline: none;
+  border-color: #FF0000;
+}
+
+.tabsList li.current { 
+    z-index: 10; 
+}
+
+.tabsList li.current a {
+   background-color: tomato;
+
+    color: #fff;
+
+}
+
+.tabsList li.current a:hover,
+.tabsList li.current a:focus {
+}
+
+.tabsList li.current a:focus { 
+    outline: 1px dotted #444; 
+}
+
+.tabsList a span {
+    position: absolute;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.tabPanel {
+    position: relative;  /*for z-index*/
+    display: block;
+    visibility: visible;
+    clear: left;
+    overflow: auto;
+    padding: .5em 3em 2em;
+    z-index: 5;
+    border-top: solid 1px #ddd;
+}
+
+.tabPanel:focus { outline: 1px dotted #999; }
+
+.tabPanel h2 { display: inline-block; }
+
+.tabPanel h2:focus { outline: 1px dotted #999; }
